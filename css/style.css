@@ -120,6 +120,9 @@ a.logo > span {
 
   text-align: center;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero .oder-button{
@@ -133,6 +136,18 @@ a.logo > span {
   letter-spacing: 0.06em;
 
   text-decoration: none;
+
+  margin: 0 auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.hero > .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Features */
@@ -156,6 +171,10 @@ a.logo > span {
   letter-spacing: 0.03em;
 }
 
+.features.container {
+  margin-top: 94px;
+}
+
 .features-list .features-title {
   color: var(--secondary-color);
 
@@ -167,11 +186,29 @@ a.logo > span {
   text-transform: uppercase
 }
 
+.features > .features-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+}
+
+.features-list > .features-item {  
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.features-list > .features-item:last-child {
+  margin-right: 0;
+}
+
 /* Work */
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 188px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -197,19 +234,40 @@ a.logo > span {
 }
 
 /* Team */
-.team {
+.team.container {
   background-color: var(--secondary-body-bg-color);
+  margin-bottom: 94px;
 }
 
 .team-list-item > .names {
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .team-list-item > .names-text {
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  text-align: center;
+
+  
+  margin: 0 0 30px 0;
+}
+
+.team > .team-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0;
+}
+
+.team-list-item > img {
+  margin-bottom: 30px;
 }
 
 /* Footer */
