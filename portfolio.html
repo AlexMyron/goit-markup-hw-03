@@ -12,28 +12,30 @@
 <body>
 
     <!-- Header -->
-    <header>
-      <nav class="nav">
-        <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-        <ul class="nav-menu">
-          <li><a class="link" href="./index.html" title="Студия">Студия</a></li>
-          <li><a class="link current" href="./portfolio.html" title="Портфолио">Портфолио</a></li>
-          <li><a class="link" href="" title="Контакты">Контакты</a></li>
+    <header class="page-header">
+      <div class="container">        
+        <nav class="nav">
+          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="nav-menu">
+            <li class="item"><a class="link current" href="./index.html" title="Студия">Студия</a></li>
+            <li class="item"><a class="link" href="./portfolio.html" title="Портфолио">Портфолио</a></li>
+            <li class="item"><a class="link" href="" title="Контакты">Контакты</a></li>
+          </ul>
+        </nav>      
+        <ul class="header-address">
+          <li class="address-item">
+            <a class="link" href="mailto:info@devstudio.com" title="info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="address-item">
+            <a class="link" href="tel:+380961111111" title="+38 096 111 11 11">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>      
-      <ul class="header-address">
-        <li class="address-item">
-          <a class="link" href="mailto:info@devstudio.com" title="info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="address-item">
-          <a class="link" href="tel:+380961111111" title="+38 096 111 11 11">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
 
       <!-- Work section -->
-      <section class="work-section">
+      <section class="work-section container">
           <h1 class="visually-hidden">Наши работы</h1>
           <ul class="work-menu">
               <li class="work-menu-item">
@@ -113,8 +115,9 @@
     </main>
       
     <!-- Footer -->
-    <footer>
-      <a class="logo footer-logo" href="./index.html" title="Web Studio"><span>Web</span>Studio</a>
+    <footer class="footer">
+      <div class="container">
+        <a class="logo footer-logo" href="./index.html" title="Web Studio"><span>Web</span>Studio</a>
       <address class="address">
         <a class="map-link" href="" title="Наш адрес">г. Киев, пр-т Леси Украинки, 26</a>
         <ul class="contacts-list">
@@ -130,7 +133,7 @@
           </li>
         </ul>
       </address>
-    </footer>
-    
+      </div>
+    </footer>    
 </body>
 </html>
