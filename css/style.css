@@ -355,27 +355,61 @@ a.logo > span {
   text-decoration: none;
 }
 
-.work-item > .subtitle {
+.text-wrapper > .subtitle {
   color: var(--secondary-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  text-align: left;
+
+  margin-top: 0;
+  margin-bottom: 4px;
+
 }
 
-.work-item > .text {
+.text-wrapper > .text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
 .work-section.container {
   margin-top: 94px;
   margin-bottom: 94px;
+}
 
+.work-section > .work-menu {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-section > .work-list {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-list > .work-item {
+  outline: 1px solid tomato;
+}
+
+.work-list > .work-item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+
+.work-list > .work-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.work-item > .text-wrapper {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
