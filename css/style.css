@@ -63,8 +63,6 @@ h2, h3 {
   margin-bottom: 188px;
   padding-left: 15px;
   padding-right: 15px;
-
-  outline: 1px solid orangered;
 }
 
 .nav > .nav-menu {
@@ -142,6 +140,7 @@ a.logo > span {
 /* Hero */
 .hero {
   background-color: var(--hero-footer-bg-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -205,7 +204,7 @@ a.logo > span {
   letter-spacing: 0.03em;
 }
 
-.features.container {
+.features > .container {
   margin-top: 94px;
 }
 
@@ -220,7 +219,7 @@ a.logo > span {
   text-transform: uppercase
 }
 
-.features > .features-list {
+.container > .features-list {
   display: flex;
   justify-content: space-between;
 }
@@ -235,26 +234,30 @@ a.logo > span {
 }
 
 /* Work */
+.work > .container {
+  text-align: center;
+}
+
 .subtitle {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  text-align: center;
-
   margin-bottom: 50px;
 }
 
-.work.container > .work-items {
+.container > .work-items {
   display: flex;
   justify-content: space-between;
 }
 
 /* Team */
-.team.container {
+.team > .container {
   background-color: var(--secondary-body-bg-color);
   margin-bottom: 94px;
+
+  text-align: center;
 }
 
 .team-list-item > .names {
@@ -273,11 +276,10 @@ a.logo > span {
 
   text-align: center;
 
-  
   margin: 0 0 30px 0;
 }
 
-.team > .team-list {
+.container > .team-list {
   display: flex;
   justify-content: space-between;
 }
@@ -338,23 +340,6 @@ a.logo > span {
 
 /* _________________ */
 /* Portfolio-Page */
-
-.work-menu-item > .button {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-}
-
-.work-menu-item > .button:hover,
-.work-menu-item > .button:focus {  
-  color: var(--white-color);
-  background-color: var(--accent-color);
-
-  text-decoration: none;
-}
-
 .text-wrapper > .subtitle {
   color: var(--secondary-color);
 
@@ -363,11 +348,8 @@ a.logo > span {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  text-align: left;
-
   margin-top: 0;
   margin-bottom: 4px;
-
 }
 
 .text-wrapper > .text {
@@ -380,24 +362,20 @@ a.logo > span {
 }
 
 
-.work-section.container {
+.work-section > .container {
   margin-top: 94px;
   margin-bottom: 94px;
 }
 
-.work-section > .work-menu {
+.container > .work-menu {
   margin-left: auto;
   margin-right: auto;
 }
 
-.work-section > .work-list {
+.container > .work-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.work-list > .work-item {
-  outline: 1px solid tomato;
 }
 
 .work-list > .work-item:not(:nth-child(3n + 3)) {
@@ -412,4 +390,44 @@ a.logo > span {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
+
+  text-align: left;
+}
+
+/* button-menu */ 
+.work-menu-item > .button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  display: inline-block;
+  padding: 6px 22px;
+  margin-right: 4px;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.work-menu .work-menu-item {
+  margin-right: 8px;
+}
+
+.work-menu-item > .button:last-child {
+  margin-right: 0;
+}
+
+.work-menu-item > .button:hover,
+.work-menu-item > .button:focus {  
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  text-decoration: none;
+}
+
+.container > .work-menu {
+  display: flex;
+
+  margin-bottom: 50px;
 }
