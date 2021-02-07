@@ -380,6 +380,8 @@ a.logo > span {
   flex-basis: calc(100% / 3 - var(--table-margin));
   margin-top: var(--table-margin);
   margin-right: var(--table-margin);
+
+  outline: 1px solid #ccc;
 }
 
 /* button-menu */ 
