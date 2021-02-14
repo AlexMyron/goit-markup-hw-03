@@ -58,12 +58,6 @@ h2, h3 {
   border-bottom: 1px solid var(--border-color);
 }
 
-.page-header > .container {
-  padding-bottom: 25px;
-  padding-top: 25px;
-  min-height: 80px;
-}
-
 /* nav */
 .container > .nav {
   display: flex;
@@ -80,6 +74,9 @@ h2, h3 {
 }
 
 .nav-menu .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
