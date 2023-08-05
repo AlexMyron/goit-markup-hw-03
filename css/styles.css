@@ -100,6 +100,7 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__nav {
@@ -137,8 +138,6 @@ body {
 .header__address-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header__address-link {
   line-height: 1.5;
