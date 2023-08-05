@@ -24,6 +24,10 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 body {
   font-family: var(--primary-font-family);
   font-size: 16px;
@@ -34,9 +38,8 @@ body {
 }
 
 .container {
-  max-width: 1128px;
-    padding-left: 0;
-    padding-right: 0;
+  max-width: 1158px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -64,9 +67,7 @@ body {
 /* == Logo section == */
 .logo-header,
 .logo-footer {
-  display: flex;
-    align-items: center;
-    width: fit-content;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -76,6 +77,13 @@ body {
   text-transform: uppercase;
 }
 
+.logo-header {
+  margin-right: 76px;
+}
+
+.logo-footer {
+  margin-bottom: 16px;
+}
 .logo-accent {
   color: var(--primary-color);
 }
@@ -96,7 +104,7 @@ body {
 
 .header__nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 
 .header__nav .list {
@@ -145,16 +153,14 @@ body {
 
 /* == Hero section == */
 .hero {
+  padding-top: 188px;
+    padding-bottom: 188px;
   background-color: var(--primary-color);
 }
 
-.hero .container {
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
 .hero__title {
   margin: 0 auto 48px;
-    width: 496px;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -164,8 +170,9 @@ body {
 
 .hero__button {
   display: block;
+  padding: 16px 32px;
+  min-width: 169px;
     margin: 0 auto;
-    padding: 16px 32px;
   font-family: var(--primary-font-family);
   font-size: inherit;
   font-weight: 500;
@@ -173,6 +180,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-color);
   border: none;
+  border-radius: 4px;
   background-color: var(--button-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -184,7 +192,7 @@ body {
 }
 
 /* == Feature section == */
-.features .container {
+.features {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -192,6 +200,9 @@ body {
 .features__list {
   display: flex;
   gap: 24px;
+}
+.features__item {
+  width: calc((100% - 72px) / 4);
 }
 .features__title {
   margin-bottom: 8px;
@@ -208,7 +219,7 @@ body {
 }
 
 /* Works list section */
-.works .container {
+.works {
   padding-bottom: 120px;
 }
 .section-title {
@@ -230,8 +241,8 @@ body {
   background-color: var(--primary-background-color);
 }
 
-.members .container {
-    padding-top: 120px;
+.members {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -239,9 +250,12 @@ body {
   display: flex;
   gap: 24px;
 }
+.members__info {
+  padding: 32px 0;
+}
 .members__item {
-  padding-bottom: 32px;
   background-color: var(--white-color);
+  border-radius: 0 0 4px 4px;
 }
 
 .members__name {
@@ -260,9 +274,6 @@ body {
   text-align: center;
 }
 
-.members__image {
-  margin-bottom: 32px;
-}
 
 /* == Galery Section == */
 .filter {
@@ -270,15 +281,17 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .filter__button {
+  padding: 12px 24px;
   font-family: var(--primary-font-family);
   font-size: inherit;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: 1px solid var(--border-color);
+  border-radius: 4px;
   background-color: var(--primary-background-color);
   color: var(--button-color);
   cursor: pointer;
@@ -286,12 +299,12 @@ body {
 
 .filter__button:hover,
 .filter__button:focus {
-  border-color: var(--button-hover-color);
+  border: 1px solid transparent;
   color: var(--white-color);
   background-color: var(--button-hover-color);
 }
 
-.galery .container {
+.galery {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -310,33 +323,29 @@ body {
 .galery__link {
   display: flex;
     flex-direction: column;
-    padding-bottom: 32px;
-  border: 1px solid var(--border-color);
   background-color: var(--white-color);
 }
 
+.galery__text-bar {
+  padding: 32px 16px;
+  border: 1px solid var(--border-color);
+}
 .galery__title {
   margin-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: left;
   color: var(--primary-color);
 }
 
 .galery__text {
-  padding-left: 16px;
-    padding-right: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: left;
   color: var(--secondary-color);
-}
-
-.galery__image {
-  margin-bottom: 32px;
 }
 
 /* == Footer Section == */
@@ -344,13 +353,12 @@ body {
   background-color: var(--primary-color);
 }
 
-.footer .container {
+.footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .footer__slogan {
-  margin-top: 18px;
-    width: 264px;
+  width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-background-color);
