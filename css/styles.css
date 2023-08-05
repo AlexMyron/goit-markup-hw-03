@@ -1,0 +1,202 @@
+:root {
+  --primary-color: #2E2F42;
+  --secondary-color: #434455;
+  --white-color: #FFF;
+  --border-color: #E7E9FC;
+  --primary-background-color: #F4F4FD;
+  --button-color: #4D5AE5;
+  --button-hover-color: #404BBF;
+  --primary-font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* == Logo section == */
+.logo-header,
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--button-color);
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  color: var(--primary-color);
+}
+
+.logo-footer .logo-accent {
+  color: var(--primary-background-color);
+}
+
+/* == Header section == */
+.header__nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+  color: var(--button-hover-color);
+}
+
+.header__address {
+  font-style: normal;
+}
+.header__address-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.header__address-link:hover,
+.header__address-link:focus {
+  color: var(--button-hover-color);
+}
+
+/* == Hero section == */
+.hero {
+  background-color: var(--primary-color);
+}
+
+.hero__title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.hero__button {
+  font-family: var(--primary-font-family);
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  border: none;
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  background-color: var(--button-hover-color);
+}
+/* == Feature section == */
+.features__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.features__text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* == Members section == */
+.members {
+  background-color: var(--primary-background-color);
+}
+
+.members__item {
+  background-color: var(--white-color);
+}
+.members__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.members__position {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* == Filter Section == */
+.filter__button {
+  font-family: var(--primary-font-family);
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--border-color);
+  background-color: var(--primary-background-color);
+  color: var(--button-color);
+  cursor: pointer;
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  color: var(--white-color);
+  background-color: var(--button-hover-color);
+}
+
+/* == Galery Section == */
+.galery__link {
+  border: 1px solid var(--border-color);
+  background-color: var(--white-color);
+}
+
+.galery__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.galery__text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+
+/* == Footer Section == */
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer__slogan {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-background-color);
+}
